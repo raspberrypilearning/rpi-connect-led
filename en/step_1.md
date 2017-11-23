@@ -16,7 +16,7 @@ Your circuit should look a little like this:
 
 + Now, connect your components to the ground pin. Make sure that your Raspberry Pi is powered on and then take the female end of the jumper wire and plug it into your ground pin.
 
-![Circuit Current Flow](circuit-current-flow.gif)
+![Circuit Current Flow](images/circuit-current-flow.gif)
 
 If your LED doesn’t light, then try the following things:
 1) Check your Raspberry Pi is on.
