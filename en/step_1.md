@@ -22,13 +22,13 @@ Have a look at your LED. You should see that one leg is longer than the other. T
 
 + Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around it goes. Push one leg into the same row as the shorter of the LED legs, so it connects to the LED, and the other leg into any other free row.
 
-+ Now take a female-to-male jumper wire and push the male end into the same row as the resistor’s second leg.
++ Now take a female-to-male jumper wire and push the male end into the same row as the resistor’s second leg. Push the female end into the ***3v3 GPIO***
 
 Your circuit should look a little like this:
 
 ![Circuit Missing Ground](images/ground-missing.png)
 
-+ Now, connect your components to the ground pin. Make sure that your Raspberry Pi is powered on and then take the female end of another jumper wire and plug it into your ground pin.
++ Now, connect your components to the ground pin. Make sure that your Raspberry Pi is powered on and then take the female end of another jumper wire and plug it into your ground pin (***GND GPIO***).
 
 ![Circuit Current Flow](images/circuit-current-flow.gif)
 
