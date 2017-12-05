@@ -2,7 +2,21 @@ To light an LED, you need to build a circuit. You're going to need:
 
 ![Circuit Requirements](images/circuit-requirements.png)
 
+This image below shows a very simple circuit. There are four components, all connected up with wires.
+
+1) The cell provides energy to the circuit in the form of electricity. A cell has a positive and a negative side. Electric current flows from the positive side of the cell to the negative side of the cell.
+
+2) The Light Emitting Diode (LED) is a type of Output Component. When current flows through the LED, it emits light. Different LEDs can produce many different colours of light, and some can even produce multiple colours.
+
+3) The resistor helps protect the LED. Resistors use up some of the energy from the cell, and therefore reduce the amount of energy that reaches the LED. Without the resistor, the LED could burn out, in much the same way as a fuse does in many of your household appliances.
+
+4) The switch acts as a break in the circuit. When the switch is open then no current can flow through the LED or the resistor. When the switch is closed, the circuit is complete and current can flow, causing the LED to switch on.
+
+![Simple Circuit](images/simple-circuit.png)
+
 Have a look at your LED. You should see that one leg is longer than the other. The long leg (<i>anode</i>) should always be connected to the positive side of a circuit. One way to remember this is to imagine the longer leg as having had something added and the shorter leg has had something taken away. Sometimes LEDs have legs the same length, in which case the <i>anode</i> is the side where the plastic rim of the LED is round. The negative side (<i>cathode</i>) will be slightly flattened.
+
+![LED Closeup](images/LEDcloseup.png)
 
 + Push the long leg of the LED into row one, close to the ravine. Place the shorter leg into row one on the other side of the ravine.
 
