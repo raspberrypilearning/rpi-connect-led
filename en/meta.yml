@@ -1,6 +1,6 @@
-title: Connecting an LED to the Raspberry Pi
+title: Connect an LED to the Raspberry Pi
 hero_image: images/banner.png
-description: rpi-connect-led description
+description: Connecting an LED to the Raspberry Pi
 theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2 # possible values: 1, 2 or 3
 listed: false
@@ -11,4 +11,4 @@ interests:
 technologies:
 site_areas:
 steps:
-  - title: Connecting an LED to the Raspberry Pi
+  - title: Connectan LED to the Raspberry Pi
