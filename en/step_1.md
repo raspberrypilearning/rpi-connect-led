@@ -2,6 +2,11 @@ To light an LED, you need to build a circuit. You're going to need:
 
 ![Circuit Requirements](images/circuit-requirements.png)
 
+| Breadboard | Male-to-female jumper wires | LED | Resistor | Power component
+| :------------------------------------------: | :------------------------------------------: | :------------------------------------------: | :------------------------------------------: | :------------------------------------------: |
+| ![breadboard](images/breadboard.png)| ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) ![battery](images/battery.png) |
+
+
 Have a look at your LED. You should see that one leg is longer than the other. The long leg (<i>anode</i>) should always be connected to the positive side of a circuit. One way to remember this is to imagine the longer leg as having had something added and the shorter leg has had something taken away. Sometimes LEDs have legs the same length, in which case the <i>anode</i> is the side where the plastic rim of the LED is round. The negative side (<i>cathode</i>) will be slightly flattened.
 
 ![LED Closeup](images/LEDcloseup.png)
