@@ -6,13 +6,9 @@ To light an LED, you need to build a circuit out of these components:
 | :---------------------------:|:---------------------------:| :---------------------------:|:---------------------------:|:---------------------------:|
 | ![breadboard](images/breadboard.png) |![mfjumper](images/mfjumper.png) | ![LED](images/led.png) |![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) ![battery](images/battery.png) |
 
-
-Have a look at your LED. You should see that one leg is longer than the other. The long leg (<i>anode</i>) should always be connected to the positive side of a circuit. One way to remember this is to imagine the longer leg as having had something added and the shorter leg has had something taken away. Sometimes LEDs have legs the same length, in which case the <i>anode</i> is the side where the plastic rim of the LED is round. The negative side (<i>cathode</i>) will be slightly flattened.
-=======
 Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
 
 You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
->>>>>>> f549f31eda2615e2a60c42b478cc30d804f692e0
 
 ![LED Closeup](images/LEDcloseup.png)
 
