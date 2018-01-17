@@ -1,7 +1,5 @@
 To light an LED, you need to build a circuit out of these components:
 
-![Circuit Requirements](images/circuit-requirements.png)
-
 | Breadboard                         | Male-to-female jumper wires    | LED                         | Resistor                       | Power component                                                    |
 |![breadboard](images/breadboard.png)|![mfjumper](images/mfjumper.png)|![LED](images/led.png)       |![resistor](images/resistor.png)|![raspberrypi](images/raspberrypi.png)![battery](images/battery.png)|
 
