@@ -1,14 +1,14 @@
-To light an LED, you need to build a circuit out of these components:
+Um eine LED leuchten zu lassen, musst du eine Schaltung aus folgenden Komponenten erstellen:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| Steckbrett                           | Überbrückungsdrähte männlich - weiblich | LED                    | Widerstand                         | Stromquelle                            |
+| ------------------------------------ | --------------------------------------- | ---------------------- | ---------------------------------- | -------------------------------------- |
+| ![Steckbrett](images/breadboard.png) | ![m-w Drähte](images/mfjumper.png)      | ![LED](images/led.png) | ![Widerstand](images/resistor.png) | ![RaspberryPi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+Schau dir deine LED an. Du solltest sehen, dass ein Bein länger ist als das andere. Das lange Bein ist das **positive** Bein und wird auch ** Anode** genannt. Es sollte immer an die positive Seite eines Stromkreises angeschlossen werden. Das kurze Bein ist das ** negative ** Bein, genannt ** Kathode **. Es muss mit der negativen Seite verbunden werden. Eine Möglichkeit, sich daran zu erinnern, besteht darin, sich vorzustellen, dass dem langen Bein etwas hinzugefügt wurde und dem kurzen Bein etwas weggenommen wurde.
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+Du wirst feststellen, dass es LEDs mit gleich langen Beinen gibt. In diesem Fall ist das positive Bein das Bein, an dem die Kunststoffkante der LED rund ist. Wo sich das negative Bein befindet, wird der Rand abgeflacht, wie im Bild unten.
 
-![LED Closeup](images/LEDcloseup.png)
+![LED-Details](images/LEDcloseup.png)
 
 + Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
 
