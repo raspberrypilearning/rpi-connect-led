@@ -1,29 +1,29 @@
 To light an LED, you need to build a circuit out of these components:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| 브레드보드                           | M-F 점퍼 케이블                         | LED                    | 저항                         | 전원 공급 장치                                |
+| ------------------------------- | ---------------------------------- | ---------------------- | -------------------------- | --------------------------------------- |
+| ![브레드보드](images/breadboard.png) | ![M-F 점퍼 케이블](images/mfjumper.png) | ![LED](images/led.png) | ![저항](images/resistor.png) | ![Raspberry Pi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+가지고 있는 LED를 살펴보세요. 아마 다리의 길이가 다를 것입니다. 긴 다리는 **+**극, 혹은 **양극**이라고 합니다. 이 다리는 항상 회로의 + 부분에 연결되어 있어야 합니다. The short leg is the **negative** leg,  called the **cathode**. 이 다리는 회로의 - 부분에 연결되어야 합니다. 이것을 기억할 수 있는 한 가지 방법은, 긴 다리에는 무엇인가 더(+) 있고, 짧은 다리는 무엇인가 부족(-)하다는 식으로 생각하는 것입니다.
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+LED 중에서는 다리의 길이가 같은 것들도 있습니다. 그런 경우에는, +극이 LED 위 플라스틱의 가장자리가 둥근 부분입니다. -극이 있는 곳은 아래의 그림과 같이 가장자리가 평평할 것입니다.
 
-![LED Closeup](images/LEDcloseup.png)
+![LED (확대)](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ 브레드보드의 움푹 파인 부분(이하 '골짜기'라고 지칭)의 왼쪽 편에서, LED의 +극을 1행에 꽂으세요. 다음 골짜기의 오른쪽에서 1행에 -극을 꽂으세요.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ 이제 저항을 준비해주세요. 저항은 극성이 없는 부품으로, 브레드보드에서 꽂는 방향은 상관이 없습니다. LED와 연결이 되게끔, 저항의 한쪽 다리를 LED의 -극과 같은 행에 꽂아주세요. 저항의 다른쪽 다리는 골짜기 오른쪽에서 비어 있는 아무 행에 꽂아줍니다.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ 이제 M-F 점퍼 케이블을 꺼낸 다음 점퍼선의 M단자(금속이 튀어나온 끝부분)를 골짜기 왼쪽편에서 LED의 +극과 같은 행에 연결합니다. 그리고 F단자(구멍이 있는 부분)를 **3V3** GPIO 핀에 연결합니다.
 
-Your circuit should look a little like this:
+회로는 다음과 같아야 합니다.
 
-![Circuit Missing Ground](images/ground-missing.png)
+![그라운드가 없는 회로](images/ground-missing.png)
 
 Now, connect your components to the ground (**GND**) GPIO pin:
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Raspberry Pi의 전원이 켜져 있는지 확인하세요. 또 다른 M-F 점퍼 케이블을 가져와 저항의 두번째 다리와 같은 편, 같은 행에 M단자를 꽂습니다. 그리고 F단자를 **GND** GPIO 핀에 연결합니다. 이제 LED가 켜질 것입니다!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![회로의 전류 흐름도](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+만약 LED가 켜지지 않는다면, 다음을 시도하세요: 1) Raspberry Pi가 켜져 있는지 확인하기 2) 모든 부품들이 브레드보드에 제대로 꽂혀 있는지 확인하기 3) LED의 극성 확인하기 4) 구성 부품들의 다리가 골짜기의 오른쪽에 있는지 확인하기 5) 다른 LED로 시도하기
