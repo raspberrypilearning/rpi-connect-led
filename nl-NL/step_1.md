@@ -1,29 +1,29 @@
-To light an LED, you need to build a circuit out of these components:
+Om een LED op te laten lichten, moet je met deze componenten een circuit bouwen:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| Experimenteerbord                           | Mannetje-vrouwtje aansluitdraden         | LED                    | Weerstand                         | Voeding                                |
+| ------------------------------------------- | ---------------------------------------- | ---------------------- | --------------------------------- | -------------------------------------- |
+| ![experimenteerbord](images/breadboard.png) | ![mv-aansluitdraad](images/mfjumper.png) | ![LED](images/led.png) | ![weerstand](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+Kijk eens naar je LED. Je zou moeten zien dat het ene pootje langer is dan het andere. Het lange pootje is de **positieve** aansluiting, ook wel de **anode** genoemd. Het moet altijd worden aangesloten op de positieve kant van een circuit. Het korte pootje is de **negatieve** aansluiting, de **kathode** genoemd. Het moet worden aangesloten op de negatieve kant. Een manier om dit te onthouden is om je voor te stellen dat er aan de lange poot iets is toegevoegd en dat aan de korte poot iets is weggehaald.
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+Je zult merken dat er LED's zijn met poten van dezelfde lengte. In dat geval is het positieve pootje het pootje waar de plastic rand van de LED rond is. Bij de negatieve poot, is de rand afgeplat, zoals in de onderstaande afbeelding.
 
-![LED Closeup](images/LEDcloseup.png)
+![LED van dichtbij](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ Duw de positieve poot van de LED in rij 1 van je experimenteerbord, dichtbij de linkerkant van de sleuf. Plaats de negatieve poot in rij 1 aan de andere kant van de sleuf.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ Zoek nu je weerstand. Een weerstand heeft geen positieve of negatieve zijde, dus het maakt niet uit hoe je hem in het experimenteerbord plaatst. Duw één poot in dezelfde rij waarin de negatieve LED-poot zit, zodat deze wordt aangesloten op de LED. Duw de andere weerstandspoot in een andere vrije rij aan de rechterkant van het sleuf.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ Neem nu een man-naar-vrouw-aansluitdraad en duw het mannelijke uiteinde in dezelfde rij als de LED, aan de linkerkant van de sleuf bij de positieve poot van de LED. Duw het vrouwelijke uiteinde op de **3V3** GPIO-pin.
 
-Your circuit should look a little like this:
+Je circuit zou er ongeveer zo uit moeten zien:
 
-![Circuit Missing Ground](images/ground-missing.png)
+![Circuit zonder aarde](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+Verbind nu je componenten met de aarde (**GND**) GPIO-pin:
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Zorg ervoor dat er spanning op je Raspberry Pi staat. Neem nog een man-naar-vrouw-aansluitdraad en duw het mannelijke uiteinde in dezelfde rij als de tweede poot van de weerstand, aan dezelfde kant van de sleuf. Duw vervolgens het vrouwelijke uiteinde op je **GND** pin. Je LED zou moeten oplichten!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![Circuit stroom loop](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+Als jouw LED niet oplicht, probeer dan het volgende: 1) Controleer of jouw Raspberry Pi aan staat 2) Controleer of al je componenten stevig in het experimenteerbord zijn gedrukt 3) Controleer of je LED op de juiste manier is aangesloten 4) Zorg ervoor de poten van je componenten zich aan de juiste kant van de sleuf bevinden 5) Probeer een andere LED
