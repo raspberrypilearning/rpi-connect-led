@@ -10,20 +10,20 @@ Du wirst feststellen, dass es LEDs mit gleich langen Beinen gibt. In diesem Fall
 
 ![LED-Details](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ Stecke das positive Bein der LED in die Reihe 1 deines Steckbretts nahe der linken Seite der Mittellinie. Stecke das negative Bein in Reihe 1 auf der anderen Seite der Mittellinie.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ Nimm jetzt deinen Widerstand. Ein Widerstand ist eine nicht polarisierte Komponente, daher spielt es keine Rolle, in welche Richtung du ihn in das Steckbrett steckst. Stecke ein Bein in dieselbe Reihe, in der sich das negative LED-Bein befindet, damit es mit der LED verbunden ist. Stecke das andere Widerstandsbein in eine andere freie Reihe auf der rechten Seite der Mittellinie.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ Nimm nun ein männlich zu weiblich Überbrückungskabel und stecke das männliche Ende in die gleiche Reihe wie das positive Bein der LED auf der linken Seite der Mittellinie. Schiebe das weibliche Ende auf den **3V3** GPIO-Pin.
 
-Your circuit should look a little like this:
+Deine Schaltung sollte ungefähr so aussehen:
 
-![Circuit Missing Ground](images/ground-missing.png)
+![Stromkreis ohne Masseverbindung](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+Verbinde nun deine Komponenten mit einem Masse-Anschluß (** GND **):
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Stelle sicher, dass dein Raspberry Pi eingeschaltet ist. Nimm ein weiteres Stecker-zu-Buchse-Kabel und schiebe das männliche Ende in dieselbe Reihe wie das zweite Bein des Widerstands auf derselben Seite der Mittellinie. Schiebe das weibliche Ende auf den Masse-Anschluß ** GND **. Deine LED sollte aufleuchten!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![Stromfluss](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+Wenn deine LED nicht leuchtet, versuche Folgendes: 1) Überprüfe, ob dein Raspberry Pi eingeschaltet ist. 2) Überprüfe, ob alle deine Komponenten fest in das Steckbrett eingedrückt sind. 3) Überprüfe, ob deine LED richtig herum eingesteckt ist. 4) Vergewissere dich, dass die Beine deiner Komponenten sich auf der richtigen Seite der Mittellinie befinden. 5) Versuche es mit einer anderen LED
