@@ -1,29 +1,29 @@
-To light an LED, you need to build a circuit out of these components:
+Para encender un LED, necesitas construir un circuito con estos componentes:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| Placa de pruebas                           | Cable puente macho a hembra                         | LED                    | Resistencia                         | Componente de alimentación             |
+| ------------------------------------------ | --------------------------------------------------- | ---------------------- | ----------------------------------- | -------------------------------------- |
+| ![placa de pruebas](images/breadboard.png) | ![cable puente macho a hembra](images/mfjumper.png) | ![LED](images/led.png) | ![resistencia](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+Echa un vistazo a tu LED. Deberías ver que un terminal es más largo que el otro. El tramo largo es el terminal **positivo**, también llamado el **ánodo**. Siempre debe estar conectado al lado positivo de un circuito. El tramo corto es el terminal **negativo**, también llamado el **cátodo**. Necesita estar conectado al lado negativo. Una forma de recordar esto es imaginar que el terminal largo tiene algo añadido y que al terminal corto se le quitó algo.
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+Encontrarás que hay LEDs que tienen terminales de la misma longitud. En ese caso, el terminal positivo es donde el borde de plástico del LED es redondo. Donde está el terminal negativo, el borde estará plano, como en la imagen siguiente.
 
 ![LED Closeup](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ Empuja el terminal positivo del LED en la fila 1 de tu placa de pruebas en la parte izquierda de la hendidura cerca de ella. Coloca el terminal negativo en la fila 1 al otro lado de la hendidura del tablero.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ Ahora busca tu resistencia. Una resistencia es un componente no polarizado, por lo que no importa en qué dirección lo coloques en la tabla de nodos. Empuja un terminal en la misma fila en la que se encuentra el terminal negativo del LED, para que se conecte al él. Empuja el otro terminal de la resistencia en cualquier otra fila libre en el lado derecho a la hendidura de la placa.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ Ahora toma un cable de puente de macho a hembra y empuja el extremo macho en la misma fila que el LED, en el lado izquierdo de la hendidura de la placa, cerca de la pata positiva del LED. Empuja el extremo hembra sobre el pin GPIO **3V3**.
 
-Your circuit should look a little like this:
+Tu circuito debería verse un poco así:
 
-![Circuit Missing Ground](images/ground-missing.png)
+![Circuito sin Tierra](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+Ahora, conecta tus componentes al pin GPIO de tierra (**GND**):
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Asegúrate de que tu Raspberry Pi esté encendida. Toma otro cable de puente de macho a hembra y empuja el extremo macho en la misma fila que el segundo terminal de la resistencia, en el mismo lado de la hendidura de la placa. Ahora empuja el extremo hembra sobre el pin **GND**. ¡Tu LED debería encenderse!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![Flujo de corriente del circuito](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+Si tu LED no se enciende, intenta lo siguiente: 1) Verifica que tu Raspberry Pi esté encendida 2) Verifica que todos tus componentes estén firmemente insertados en la tabla de nodos 3) Verifica que tu LED esté en la posición correcta 4) Verifica que los terminales de tus componentes estén en el lado derecho de la hendidura del tablero 5) Prueba con otro LED
