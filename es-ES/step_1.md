@@ -6,24 +6,24 @@ Para encender un LED, necesitas construir un circuito con estos componentes:
 
 Echa un vistazo a tu LED. Deberías ver que una patilla es más larga que la otra. La patilla más larga es el terminal **positivo**, también llamado el **ánodo**. Siempre debe estar conectado al lado positivo de un circuito. La patilla más corta es el terminal **negativo**, también llamado el **cátodo**. Necesita estar conectada al lado negativo. Una forma de recordar esto es imaginar que la patilla larga tiene algo añadido y a la patilla corta se le quitó algo.
 
-Encontrarás que hay LEDs que tienen patillas de la misma longitud. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+Encontrarás que hay LEDs que tienen patillas de la misma longitud. En ese caso, la patilla positiva es donde el borde de plástico del LED es redondo. Donde está la patilla negativa, el borde estará plano, como en la imagen siguiente.
 
-![LED Closeup](images/LEDcloseup.png)
+![LED de cerca](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ Empuja la patilla positiva del LED en la fila 1 de tu placa de pruebas, en la parte izquierda de la hendidura cerca de ella. Coloca la patilla negativa en la fila 1 al otro lado de la hendidura del tablero.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ Ahora busca tu resistencia. Una resistencia es un componente no polarizado, por lo que no importa en qué dirección lo coloques en la placa de pruebas. Empuja una patilla en la misma fila en la que se encuentra el terminal negativo del LED, para que se conecte al él. Empuja la otra patilla de la resistencia en cualquier otra fila libre en el lado derecho a la hendidura de la placa.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ Ahora toma un cable de puente de macho a hembra y empuja el extremo macho en la misma fila que el LED, en el lado izquierdo de la hendidura de la placa, cerca de la patilla positiva del LED. Empuja el extremo hembra sobre el **3V3** Pin GPIO.
 
-Your circuit should look a little like this:
+Tu circuito debería verse un poco así:
 
-![Circuit Missing Ground](images/ground-missing.png)
+![Circuito sin Tierra](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+Ahora, conecta tus componentes al pin de tierra (**GND**) GPIO:
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Asegúrate de que tu Raspberry Pi esté encendida. Coge otro cable de puente de macho a hembra y empuja el extremo macho en la misma fila que el segundo terminal de la resistencia, en el mismo lado de la hendidura de la placa. Ahora empuja el extremo hembra sobre el pin **GND**. ¡Tu LED debería encenderse!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![Flujo de corriente del circuito](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+Si tu LED no se enciende, intenta lo siguiente: 1) Verifica que tu Raspberry Pi esté encendida 2) Verifica que todos tus componentes estén firmemente insertados en el tablero 3) Verifica que tu LED esté en la posición correcta 4) Verifica que los terminales de tus componentes estén en el lado derecho de la hendidura del tablero 5) Prueba con otro LED
