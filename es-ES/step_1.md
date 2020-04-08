@@ -1,6 +1,6 @@
-To light an LED, you need to build a circuit out of these components:
+Para encender un LED, necesitas construir un circuito con estos componentes:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
+| Placa de pruebas                     | Cable puente macho a hembra      | LED                    | Resistencia                      | Componente de alimentación             |
 | ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
 | ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
