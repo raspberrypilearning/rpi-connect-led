@@ -1,29 +1,29 @@
-To light an LED, you need to build a circuit out of these components:
+لإضاءة ضوء LED، سوف تحتاج إلى بناء دائرة كهربائية من هذه المكونات:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| اللوح الكهربائي                           | اسلاك توصيل ذكر الى انثى             | ضوء LED                    | مقاومة                         | مكون طاقة                              |
+| ----------------------------------------- | ------------------------------------ | -------------------------- | ------------------------------ | -------------------------------------- |
+| ![اللوح الكهربائي](images/breadboard.png) | ![سلك توصيل Mf](images/mfjumper.png) | ![ضوء LED](images/led.png) | ![مقاومة](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+ألق نظرة على ضوء LED الخاص بك. يجب أن ترى أن ساق واحدة أطول من الأخرى. الساق الطويلة هي الساق ** الموجبة **، وتسمى أيضا ** أنود **. يجب دائمًا توصيله بالجانب الموجب من الدائرة الكهربائية. الساق القصيرة هي الساق ** السالبة** ، وتسمى أيضا **كاثود**. يجب أن يكون متصلاً بالجانب السلبي. إحدى الطرق لتذكر هذا هو تخيل الساق الطويلة على أنها تم إضافة شيء لها والساق القصيرة على أنها قد أخذت شيء ما.
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+ستجد أن هناك مصابيح LED لها أرجل بنفس الطول. في هذه الحالة، تكون الساق الموجبة هي الساق حيث تكون الحافة البلاستيكية لمصباح LED دائريًا. عندما تكون الساق السلبية، سيتم تسوية الحافة، كما في الصورة أدناه.
 
-![LED Closeup](images/LEDcloseup.png)
+![ضوء LED](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ ادفع الساق الموجبة لمصباح LED في الصف 1 من لوحة التوصيل، بالقرب من الجانب الأيسر من اللوح. ضع الساق السلبية في الصف 1 على الجانب الآخر من اللوح.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ الآن ابحث عن المقاومة الخاص بك. المقاومة هو عنصر غير مستقطب، لذلك لا يهم أي اتجاه يتم وضعه في لوحة التوصيل. ادفع ساق واحدة في نفس الصف الذي توجد فيه ساق ضوء LED السالبة، بحيث تتصل بـضوء LED. ادفع ساق المقاومة الآخر في أي صف حر آخر على الجانب الأيمن من اللوح.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ الآن خذ اسلاك التوصيل ذكر إلى انثى وادفع طرف الذكر في نفس صف ضوء LED، على الجانب الأيسر من اللوح بالقرب من الساق الموجبة لـلضوء LED. ادفع طرف سلك التوصيل الانثى إلى منفذ GPIO المتمثل بـ ** 3V3 **.
 
-Your circuit should look a little like this:
+نتيجتك النهائية يجب أن تبدو مثل هذا:
 
-![Circuit Missing Ground](images/ground-missing.png)
+![لوح كهربائي ليس متصل بالأرض](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+الآن، قم بتوصيل مكوناتك بالأرض منفذ GPIOـ (** GND **):
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ تأكد من تشغيل جهاز اRaspberry Pi. خذ سلكًا آخر من ذكر إلى أنثى وادفع طرف الذكر في نفس الصف مثل الساق الثانية للمقاومة، على نفس الجانب من اللوح. ادفع طرف سلك التوصيل الانثى إلى منفذ GPIOـ** 3V3 **. يجب أن يضيء مصباح LED الخاص بك!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![لوح كهربائي متصل](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+إذا لم يضيء المصباح LED الخاص بك، فجرّب ما يلي: 1) تحقق من أن جهازكRaspberry Pi في وضع التشغيل 2) تحقق من دفع جميع المكونات بقوة في لوحة توصيل 3) تحقق من أن مصباح LED الخاص بك موضع بالطريقة الصحيحة 4) تأكد من ألأرجل على الجانب الأيمن من اللوح 5) جرب مصباح LED آخر
