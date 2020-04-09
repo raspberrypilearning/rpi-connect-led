@@ -4,17 +4,17 @@ Aby zaświecić diodę LED, musisz zbudować obwód z tych elementów:
 | ------------------------------------ | -------------------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
 | ![breadboard](images/breadboard.png) | ![przewód gniazdo-wtyk](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. Długa nóżka jest**dodatnią**, jest także nazywana **anodą**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+Have a look at your LED. You should see that one leg is longer than the other. Długa nóżka jest**dodatnią**, jest także nazywana **anodą**. It should always be connected to the positive side of a circuit. Krótka nóżka jest**ujemną**, nazywana jest **katodą**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
 
 You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
 
-![LED Closeup](images/LEDcloseup.png)
+![Zbliżenie diody LED](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ Wciśnij dodatnią nóżkę diody LED w 1 rzędzie płytki stykowej, blisko lewej strony rowka. Umieść nóżkę ujemną w rzędzie 1 po drugiej stronie rowku.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Wepchnij drugą nogę opornika do dowolnego wolnego rzędu po prawej stronie rowku.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ Teraz weź przewód połączeniowy męsko-żeński i wepchnij męski koniec do tego samego rzędu co dioda LED, po lewej stronie rowku w pobliżu dodatniej nogi LED. Wciśnij żeński koniec na pin**3V3** GPIO.
 
 Your circuit should look a little like this:
 
