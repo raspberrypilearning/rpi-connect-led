@@ -20,10 +20,10 @@
 
 ![Κύκλωμα χωρίς γείωση](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+Τώρα, σύνδεσε τα εξαρτήματά σου στην ακίδα γείωσης GPIO (**GND**):
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Βεβαιώσου ότι το Raspberry Pi σου είναι ενεργοποιημένο. Πάρε ένα άλλο καλώδιο αρσενικό-σε-θηλυκό και πίεσε το αρσενικό άκρο στην ίδια σειρά με τον δεύτερο ακροδέκτη της αντίστασης, στην ίδια πλευρά με το αυλάκι. Μετά πίεσε το θηλυκό άκρο στην ακίδα **GND**. Η λυχνία LED πρέπει να ανάψει!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![Ροή ρεύματος κυκλώματος](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+Εάν η λυχνία LED δεν ανάψει, δοκίμασε τα εξής: 1) Έλεγξε εάν το Raspberry Pi σου είναι ενεργοποιημένο 2) Έλεγξε ότι όλα τα εξαρτήματά σου πιέστηκαν σταθερά στην πλακέτα δοκιμών 3) Έλεγξε ότι η λυχνία LED σου είναι σωστά τοποθετημένη 4) Φρόντισε ώστε οι ακροδέκτες των εξαρτημάτων σου βρίσκονται στη σωστή πλευρά του αυλακιού. 5) Δοκίμασε μια άλλη λυχνία LED
