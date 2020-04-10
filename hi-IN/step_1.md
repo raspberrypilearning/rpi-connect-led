@@ -1,29 +1,29 @@
 एक LED को जलाने के लिए, आपको इन पुर्ज़ो में से एक सर्किट बनाने की आवश्यकता है:
 
-| ब्रेड बोर्ड (breadboard)             | मेल-टू-फीमेल जंपर तार (Male-to-female jumper wires) | LED                    | Resistor                         | Power component                        |
+| ब्रेड बोर्ड (breadboard)             | मेल-टू-फीमेल जंपर तार (Male-to-female jumper wires) | LED                    | रेसिस्टर                         | पावर घटक                               |
 | ------------------------------------ | --------------------------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
 | ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png)                    | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-अपने LED पर नजर डालें। You should see that one leg is longer than the other. लम्बा पैर **पॉजिटिव** पैर हैं, और इसे **एनोड** भी कहा जाता है । यह हमेशा एक सर्किट के पॉजिटिव बाजू से हि जुड़ा होना चाहिए। The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+अपने LED पर नजर डालें। आपको देखना चाहिए कि एक पैर दूसरे की तुलना में लंबा है। लम्बा पैर **पॉजिटिव** पैर हैं, और इसे **एनोड** भी कहा जाता है । यह हमेशा एक सर्किट के पॉजिटिव बाजू से हि जुड़ा होना चाहिए। छोटा पैर **नेगेटिव** पैर हैं, और उसे **कैथोड** कहा जाता हैं। इसे नेगेटिव बाजू से हि जोड़ने की आवश्यकता है। इसे याद रखने का एक तरीका यह है कि लंबे पैर की कल्पना करें जैसे कुछ जोड़ा गया था और छोटा पैर की कल्पना करे जैसे कुछ दूर ले जाया गया था।
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+आप पाएंगे कि काफी LED हैं जिनकी पैर की लंबाई समान हैं। इस मामले में, पॉजिटिव पैर वह पैर है जहां LED के प्लास्टिक (plastic) के किनारे गोल होते हैं। जहां नेगेटिव पैर है, वहां किनारे को चपटा किया जाएगा, जैसे नीचे की छवि में हैं।
 
 ![LED Closeup](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ अपने ब्रेडबोर्ड की पंक्ति 1(खड्ड के बाईं ओर के करीब) में LED के पॉजिटिव पैर को डाले। नेगेटिव पैर को खड्ड के दूसरी तरफ की पंक्ति 1 में रखें।
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ अब अपना रेसिस्टर ढूंढें। रेसिस्टर एक "नॉन-पोलराइज्ड" पुर्ज़ा है, इसलिए इससे कोई फर्क नहीं पड़ता कि आप इसे किस तरह से ब्रेडबोर्ड में लगाते हैं। एक पैर को उसी पंक्ति में धकेलें, जिसमें नेगेटिव LED पैर है, जिससे यह LED से जुड़ जाए। रेसिस्टर के अन्य पैर को खड्ड के दाईं ओर किसी अन्य मुक्त पंक्ति में दबाएं।
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ अब एक मेल-टू-फीमेल जम्पर वायर लें और उसके मेल हिस्से को LED के पॉजिटिव पैर के समान पंक्ति में धकेलें। फीमेल हिस्से को **3V3** GPIO पिन में धकेलें।
 
-Your circuit should look a little like this:
+आपका सर्किट कुछ इस तरह दिखना चाहिए:
 
 ![Circuit Missing Ground](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+अब, अपने पुर्ज़ो को ग्राउंड (**GND**) GPIO पिन से कनेक्ट करें:
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ सुनिश्चित करें कि आपका Raspberry Pi चालू है। एक और मेल-टू-फीमेल जम्पर वायर लें और उसके मेल हिस्से को रेसिस्टर के दूसरे पैर के खड्ड के उसी तरफ समान पंक्ति में धकेलें। फिर, फीमेल हिस्से को **GND** पिन में धकेलें। आपकी LED प्रकाशीत होनी चाहिए!
 
 ![Circuit Current Flow](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+यदि आपकी LED प्रकाशीत नहीं हो रही है, तो निम्न चीज़ो का प्रयास करें: 1) सुनिश्चित करें कि आपका Raspberry Pi चालू है 2) अपके सभी पुर्ज़ो को ब्रेडबोर्ड में मजबूती से धकेलें 3) अपने LED की जांच करें की वो सही तरीके से जुड़ी है 4) सुनिश्चित करें कि आपके पुर्ज़ो के पैर खड्ड के दाईं ओर हैं 5) दूसरे LED से प्रयास करें
