@@ -1,29 +1,29 @@
 Para acender um LED, você precisa construir um circuito com estes componentes:
 
-| Protoboard                                | Fios jumper macho-fêmea          | LED                    | Resistor                            | Componente de energia                  |
-| ----------------------------------------- | -------------------------------- | ---------------------- | ----------------------------------- | -------------------------------------- |
-| ![placa de ensaio](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistência](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| Protoboard                           | Fios jumper macho-fêmea          | LED                    | Resistor                         | Componente de energia                  |
+| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
+| ![protoboard](images/breadboard.png) | ![jumpermf](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Dê uma olhada no seu LED. Você deve reparar que uma perna é mais longa que a outra. A perna longa é a perna do **positivo**, e também chamado de **ânodo**. Deve sempre ser ligada ao lado positivo de um circuito. A perna curta é a perna ** negativa **, chamada de  ** cátodo **. Precisa de ser ligada ao lado negativo. Uma maneira de recordar isto é imaginar a perna longa como tendo algo acrescentado e a perna curta como tendo algo retirado.
+Dê uma olhada no seu LED. Você deve reparar que uma perna é mais longa que a outra. A perna longa é a perna do **positivo**, e também chamado de **ânodo**. Deve sempre ser conectada no lado positivo de um circuito. A perna curta é a perna do **negativo**, chamada de **cátodo**. Ela precisa estar conectada no lado negativo. Uma maneira de lembrar isso é imaginar a perna longa como tendo algo acrescentado (+) e a perna curta como tendo algo retirado (-).
 
-Tu descobrirás que existem LEDs com pernas do mesmo comprimento. Nesse caso, a perna positiva é a perna em que a borda plástica do LED é redonda. Onde a perna negativa está, a borda será achatada, como na imagem em baixo.
+Você verá que existem LEDs com pernas do mesmo comprimento. Nesse caso, a perna do positivo é a perna em que a borda plástica do LED é redonda. Onde a perna do negativo está, a borda tem um chanfro (achatada), como na imagem abaixo.
 
-![LED de perto](images/LEDcloseup.png)
+![Close do LED](images/LEDcloseup.png)
 
-+ Empurra a perna positiva do LED para a linha 1 da tua placa de ensaio, perto do lado esquerdo da ravina. Coloca a perna negativa na linha 1 do outro lado da ravina.
++ Empurre a perna do positivo do LED para a linha 1 da sua protoboard, perto do lado esquerdo da fenda. Coloque a perna do negativo na linha 1 do outro lado da fenda.
 
-+ Agora encontra a tua resistência. A resistência é um componente não polarizado, portanto, não importa em que sentido tu a colocas na placa de ensaio. Empurra uma perna na mesma linha em que a perna negativa do LED está, para que ela se ligue ao LED. Empurre a outra perna da resistência para qualquer outra linha livre no lado direito da ravina.
++ Agora encontre seu resistor. Um resistor é um componente não polarizado, portanto, não importa em que sentido você o coloca na protoboard. Empurre uma perna na mesma linha em que a perna do negativo do LED está, para que ela se conecte ao LED. Empurre a outra perna do resistor para qualquer outra linha livre no lado direito da fenda.
 
-+ Agora pega um fio de ligação macho-fêmea e empurra a extremidade macho na mesma linha do LED, no lado esquerdo da ravina, próximo à perna positiva do LED. Empurra a extremidade fêmea para o pino GPIO ** 3V3 **.
++ Agora pegue um fio jumper macho-fêmea e empurre a extremidade macho na mesma linha do LED, no lado esquerdo da fenda, próximo à perna do positivo do LED. Empurre a extremidade fêmea para o pino GPIO **3V3**.
 
-O teu circuito deve ficar assim:
+Seu circuito deve ficar assim:
 
-![Neutro em falta no circuito](images/ground-missing.png)
+![Circuito sem o terra](images/ground-missing.png)
 
-Agora, liga os teus componentes ao pino GPIO neutro (** GND **):
+Agora, conecte seus componentes ao pino GPIO terra (**GND**):
 
-+ Garante que o teu Raspberry Pi está ligado. Agarra outro fio de ligação macho-fêmea e empurra a extremidade macho na mesma linha da segunda perna da resistência, no mesmo lado da ravina. De seguida, empurra a extremidade fêmea para o pino ** GND **. O teu LED deverá acender!
++ Verifique se o seu Raspberry Pi está ligado. Pegue outro fio jumper macho-fêmea e empurre a extremidade macho na mesma linha da segunda perna do resistor, no mesmo lado da fenda. Em seguida, empurre a extremidade fêmea para o pino **GND**. Seu LED deve acender!
 
 ![Fluxo da corrente no circuito](images/circuit-current-flow.gif)
 
-Se o teu LED não acender, tenta o seguinte: 1) Verifica que o Raspberry Pi está ligado 2) Verifica se todos os teus componentes estão firmemente pressionados na placa ensaio 3) Verifica que o LED está na orientação certa 4) Verifica se as pernas dos teus componentes estão do lado correto da ravina 5) Tenta outro LED
+Se o seu LED não acender, tente o seguinte: 1) Verifique se o Raspberry Pi está ligado 2) Verifique se todos os seus componentes estão firmemente pressionados na protoboard 3) Verifique se o LED está na orientação certa 4) Verifique se as pernas dos seus componentes estão do lado direito da fenda 5) Tente outro LED
