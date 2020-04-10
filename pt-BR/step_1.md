@@ -1,10 +1,10 @@
-Para acender um LED, tu precisas de construir um circuito com estes componentes:
+Para acender um LED, você precisa construir um circuito com estes componentes:
 
-| Placa de ensaio                           | Fios de ligação macho-fêmea      | LED                    | Resistência                         | Componente de energia                  |
+| Protoboard                                | Fios jumper macho-fêmea          | LED                    | Resistor                            | Componente de energia                  |
 | ----------------------------------------- | -------------------------------- | ---------------------- | ----------------------------------- | -------------------------------------- |
 | ![placa de ensaio](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistência](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Dá uma olhadela no teu LED. Deves de reparar que uma perna é mais longa que a outra. A perna longa é a perna ** positiva **, e também chamada de ** ânodo **. Deve sempre ser ligada ao lado positivo de um circuito. A perna curta é a perna ** negativa **, chamada de  ** cátodo **. Precisa de ser ligada ao lado negativo. Uma maneira de recordar isto é imaginar a perna longa como tendo algo acrescentado e a perna curta como tendo algo retirado.
+Dê uma olhada no seu LED. Você deve reparar que uma perna é mais longa que a outra. A perna longa é a perna do **positivo**, e também chamado de **ânodo**. Deve sempre ser ligada ao lado positivo de um circuito. A perna curta é a perna ** negativa **, chamada de  ** cátodo **. Precisa de ser ligada ao lado negativo. Uma maneira de recordar isto é imaginar a perna longa como tendo algo acrescentado e a perna curta como tendo algo retirado.
 
 Tu descobrirás que existem LEDs com pernas do mesmo comprimento. Nesse caso, a perna positiva é a perna em que a borda plástica do LED é redonda. Onde a perna negativa está, a borda será achatada, como na imagem em baixo.
 
