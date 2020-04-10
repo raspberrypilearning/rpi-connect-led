@@ -4,7 +4,7 @@ Para encender un LED, necesitas construir un circuito con estos componentes:
 | ------------------------------------------ | -------------------------------- | ---------------------- | ----------------------------------- | -------------------------------------- |
 | ![placa de pruebas](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistencia](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Echa un vistazo a tu LED. Deberías ver que una patilla es más larga que la otra. La patilla más larga es el terminal **positivo**, también llamado el **ánodo**. Siempre debe estar conectado al lado positivo de un circuito. La patilla más corta es el terminal **negativo**, también llamado el **cátodo**. Necesita estar conectada al lado negativo. Una forma de recordar esto es imaginar que la patilla larga tiene algo añadido y a la patilla corta se le quitó algo.
+Echa un vistazo a tu LED. Deberías ver que una patilla es más larga que la otra. La patilla más larga es el terminal **positivo**, también llamado **ánodo**. Siempre debe estar conectado al lado positivo de un circuito. La patilla más corta es el terminal **negativo**, también llamado **cátodo**. Necesita estar conectada al lado negativo. Una forma de recordar esto es imaginar que la patilla larga tiene algo añadido y a la patilla corta se le quitó algo.
 
 Encontrarás que hay LEDs que tienen patillas de la misma longitud. En ese caso, la patilla positiva es donde el borde de plástico del LED es redondo. Donde está la patilla negativa, el borde estará plano, como en la imagen siguiente.
 
@@ -16,7 +16,7 @@ Encontrarás que hay LEDs que tienen patillas de la misma longitud. En ese caso,
 
 + Ahora toma un cable de puente de macho a hembra y empuja el extremo macho en la misma fila que el LED, en el lado izquierdo de la hendidura de la placa, cerca de la patilla positiva del LED. Empuja el extremo hembra sobre el **3V3** Pin GPIO.
 
-Tu circuito debería verse un poco así:
+Tu circuito debería verse mas o menos así:
 
 ![Circuito sin Tierra](images/ground-missing.png)
 
