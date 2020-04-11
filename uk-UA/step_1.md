@@ -1,10 +1,10 @@
-To light an LED, you need to build a circuit out of these components:
+Щоб світлодіод засвітився, тобі потрібно побудувати схему з цих компонентів:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
+| Макетна плата                        | Дріт тато-мама                   | Світлодіод             | Резистор                         | Джерело живлення                       |
 | ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
 | ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+Поглянь на свій світлодіод. Ти маєш бачити, що одна ніжка довша за іншу. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
 
 You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
 
