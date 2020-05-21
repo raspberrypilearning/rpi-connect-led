@@ -1,29 +1,29 @@
-To light an LED, you need to build a circuit out of these components:
+想要点亮一个 LED，你需要下面的元件组成一个电路
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| 面包板                           | 公对母跳线                         | LED                    | 电阻                         | 电源                             |
+| ----------------------------- | ----------------------------- | ---------------------- | -------------------------- | ------------------------------ |
+| ![面包板](images/breadboard.png) | ![公对母跳线](images/mfjumper.png) | ![LED](images/led.png) | ![电阻](images/resistor.png) | ![树莓派](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+看看你的 LED 你应该看到一条腿比另一条腿长。 长的一条是 **正极**，有时也被称为 **阳极**。 它应始终连接到电路的正极。 短的是 **负极**，有时也被称为**阴极** 。 它需要连接到电路的负极。 记住这一点的一种方法是，将长腿想象成有东西流进来，而短腿想象成有东西被流出去。
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+有时你会发现有些 LED 的支脚长度相同。 在这种情况下，正极是 LED 的塑料边缘为圆形的脚。 负极所在的一端，边缘缺一角，如下图所示。
 
-![LED Closeup](images/LEDcloseup.png)
+![LED特写](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ 将 LED 的正极插入面包板的第一行，靠近沟槽的左侧。 把负极插入沟槽的另外一边的第一行。
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ 现在找出你的电阻。 电阻是无极性的组件，因此无所谓怎么样插入面包板。 将一只脚插入 LED 负极所在的同一行中，以便将其连接到LED。 将另一只脚插入沟槽右边的任何其他空行中。
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ 现在，使用一根公对母跳线，并将其突出的一边插入与 LED相同的行中，位于沟槽的左侧，靠近 LED 的正极。 将有插槽的一边插入 **3V ** GPIO引脚。
 
-Your circuit should look a little like this:
+你的电路看起来应该像这样：
 
-![Circuit Missing Ground](images/ground-missing.png)
+![电路未接地](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+现在，将你的组件连接地线(**GND**) GPIO 引脚：
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ 确保你的树莓派已接通电源。 拿另一根公对母跳线，将突出的一端插入与电阻第二只脚在沟槽同一侧的同一行中。 将有插槽的一边插入 **GND** GPIO引脚。 你的 LED 应该亮啦！
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![电路电流](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+如果你的 LED 灯不亮，请尝试以下操作： 1) 检查你的 树莓派 是否已打开 2) 检查你的所有组件均已牢固地插入面包板 3) 检查您的 LED 灯正负极是否正确 4) 确保元件的的腿插入正确的沟槽两侧 5) 换另一个 LED 试试
