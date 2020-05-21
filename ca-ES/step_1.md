@@ -1,29 +1,29 @@
-To light an LED, you need to build a circuit out of these components:
+Per encendre un LED, has de crear un circuit amb aquests components:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| Placa de proves                           | Cable pont mascle-femella                    | LED                    | Resistència                         | Component que proporciona energia      |
+| ----------------------------------------- | -------------------------------------------- | ---------------------- | ----------------------------------- | -------------------------------------- |
+| ![placa de proves](images/breadboard.png) | ![cable mascle-femella](images/mfjumper.png) | ![LED](images/led.png) | ![resistència](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+Mira el teu LED. Hauries de veure que un terminal és més llarg que l'altre. El terminal més llarg és el **positiu**, també anomenat **ànode**. Sempre l’has de connectar al costat positiu d’un circuit. El terminal més curt és el **negatiu**, també anomenat **càtode**. Necessita estar connectat al costat negatiu del circuit. Una manera de recordar-ho és imaginar el terminal llarg com una cosa afegida i el curt com haver-ne tret alguna cosa.
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+Trobaràs que hi ha LEDs que tenen els terminals de la mateixa llargada. En aquest cas, el terminal positiu es troba en la vora de plàstic rodona del LED. En el terminal negatiu, la vora de plàstic estarà aplanada, com a la imatge de sota.
 
-![LED Closeup](images/LEDcloseup.png)
+![LED de a prop](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ Introdueix el terminal positiu del LED a la fila 1 de la placa de proves, a prop del costat esquerre de l'esquerda. Col·loca el terminal negatiu a la fila 1 de l’altre costat de l'esquerda de la placa.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ Ara busca la teva resistència. Una resistència és un component no polaritzat, per la qual cosa no importa de quina manera el posis a la placa. Col·loca un terminal a la mateixa fila en què es troba el terminal negatiu del LED, així quedaran connectats. Introdueix l'altre terminal de la resistència a qualsevol altra fila lliure del costat dret de l'esquerda de la placa.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ Ara agafa un cable pont mascle-femella i posa l’extrem mascle a la mateixa fila que el LED, al costat esquerre de l'esquerda prop del terminal positiu del LED. Introdueix l’extrem femella al pin etiquetat **3V3**.
 
-Your circuit should look a little like this:
+El teu circuit hauria d’assemblar-se a aquest:
 
-![Circuit Missing Ground](images/ground-missing.png)
+![Circuit sense presa de terra](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+Ara, connecta els teus components al pin de terra (**GND**) GPIO:
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Assegura't que la teva Raspberry Pi estigui engegada. Agafa un altre cable pont mascle-femella i col·loca l’extrem mascle a la mateixa fila que hi ha el segon terminal de la resistència, al mateix costat de l'esquerda. Introdueix l’extrem femella al teu pin **GND**. El teu LED hauria d’il·luminar-se!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![Flux de corrent del circuit](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+Si el teu LED no s’il·lumina, prova el següent: 1) Comprova que la teva Raspberry Pi estigui engegada 2) Comprova que tots els teus components estan introduïts fermament a la placa de proves 3) Comprova que el teu LED sigui a la posició correcta 4) Assegura't que els terminals dels components es troben a la part dreta de l'esquerda de la placa. 5) Prova un altre LED
