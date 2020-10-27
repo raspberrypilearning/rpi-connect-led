@@ -1,7 +1,7 @@
 ---
-title: Connect an LED to the Raspberry Pi
+title: Raspberry PiにLEDを接続する
 hero_image: images/banner.png
-description: Connecting an LED to the Raspberry Pi
+description: Raspberry PiにLEDを接続する
 theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2 #possible values: 1, 2 or 3
 listed: false
@@ -13,4 +13,4 @@ technologies:
 site_areas:
 steps:
   - 
-    title: Connect an LED to the Raspberry Pi
+    title: Raspberry PiにLEDを接続する
