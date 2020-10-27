@@ -1,29 +1,29 @@
-To light an LED, you need to build a circuit out of these components:
+LEDを点灯するには、次の部品で回路を作る必要があります。
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| ブレッドボード                           | オス-メス ジャンパー線                        | LED                    | 抵抗                         | 電源装置                                   |
+| --------------------------------- | ----------------------------------- | ---------------------- | -------------------------- | -------------------------------------- |
+| ![ブレッドボード](images/breadboard.png) | ![オス-メスジャンパー線](images/mfjumper.png) | ![LED](images/led.png) | ![抵抗](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+LEDを見てください。 片方のピンがもう一方よりも長いことがわかるでしょう。 長いピンは**プラス**ピンで、**アノード**とも呼ばれます 。 このピンは回路のプラス側に接続します。 短いピンは**マイナス**ピンで、**カソード**と呼ばれます 。 こちらはマイナス側に接続します。 長いピンは何かがプラスされたもの、短いピンは何かをマイナスされたものと考えると覚えやすいでしょう。
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+ピンの長さが同じLEDもあります。 その場合、プラスピンはLEDのプラスチックのエッジが丸い側にあるピンです。 一方、マイナスピンは、下の図のように、エッジが平らな側にあります。
 
-![LED Closeup](images/LEDcloseup.png)
+![LEDのクローズアップ](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ LEDのプラスピンをブレッドボードの切れ込みの左側すぐの1列目に差し込みます。 マイナスピンを切れ込みの反対側の1列目に差し込みます。
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ 次に、抵抗を使います。 抵抗は極性のない部品なので、ブレッドボードにどの向きで差し込んでもかまいません。 片方のピンLEDのマイナスピンと同じ並びの穴に差し込むと、LEDに接続されます。 抵抗のもう一方のピンを、切れ込みの右側で、使っていない別の列に差し込みます。
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ 次に、オス-メスジャンパー線を取り出し、オス側を切れ込みの左側のLEDのプラスピン近くでLEDと同じ並びの穴にを差し込みます。 メス側を**3V3** GPIOピンに差し込みます。
 
-Your circuit should look a little like this:
+回路はこんな感じになります。
 
-![Circuit Missing Ground](images/ground-missing.png)
+![グラウンドのない回路](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+次に、グラウンド（** GND ** ）GPIOピンに接続しましょう：
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Raspberry Piの電源が入っていることを確認してください。 別のオス-メスジャンパー線を取り出し、オス側を抵抗の2つ目のピンと同じ並びの、切り込みを隔てて抵抗と同じ側にある穴に差し込みます。 メス側を**GND** GPIOピンに差し込みます。 LEDが点灯するはずです。
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![回路電流の流れ](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+LEDが点灯しない場合は、以下を試してください 1) Raspberry Piの電源が入っていることを確認します 2) すべての部品がブレッドボードにしっかりと差し込まれていることを確認します 3) LEDが正しい向きであることを確認します 4) 部品のピンが切り込みを隔てて正しい側にあることを確かめます 5) LEDを交換してみます
