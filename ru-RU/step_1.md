@@ -1,29 +1,29 @@
-To light an LED, you need to build a circuit out of these components:
+Чтобы зажечь светодиод, тебе нужно построить схему из этих компонентов:
 
-| Breadboard                           | Male-to-female jumper wires      | LED                    | Resistor                         | Power component                        |
-| ------------------------------------ | -------------------------------- | ---------------------- | -------------------------------- | -------------------------------------- |
-| ![breadboard](images/breadboard.png) | ![mfjumper](images/mfjumper.png) | ![LED](images/led.png) | ![resistor](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
+| Макетная плата                           | Соединительные провода папа-мама                        | Светодиод                    | Резистор                         | Компонент питания                      |
+| ---------------------------------------- | ------------------------------------------------------- | ---------------------------- | -------------------------------- | -------------------------------------- |
+| ![макетная плата](images/breadboard.png) | ![соединительный провод папа-мама](images/mfjumper.png) | ![светодиод](images/led.png) | ![резистор](images/resistor.png) | ![raspberrypi](images/raspberrypi.png) |
 
-Have a look at your LED. You should see that one leg is longer than the other. The long leg is the **positive** leg, and also called the **anode**. It should always be connected to the positive side of a circuit. The short leg is the **negative** leg,  called the **cathode**. It needs to be connected to the negative side. One way to remember this is to imagine the long leg as having had something added and the short leg as having had something taken away.
+Взгляни на свой светодиод. Ты должен увидеть, что одна ножка длиннее другой. Длинная ножка является **положительной** ножкой, а также называется **анодом**. Она всегда должна быть подключена к положительной стороне цепи. Короткая ножка является **отрицательной** ножкой, а также называется **катодом**. Она должна быть подключена с отрицательной стороне. Один из способов это запомнить – представить как будто к ней длинной ножке что-то добавили (+), а короткую ногу как будто от нее что-то забрали (-).
 
-You'll find that there are LEDs that have legs of the same length. In that case, the positive leg is the leg where the plastic edge of the LED is round. Where the negative leg is, the edge will be flattened, like in the image below.
+Ты обнаружишь, что есть светодиоды, которые имеют ножки одинаковой длины. В этом случае положительная ножка – это ножка, в которой пластиковый край светодиода закруглен. Там, где отрицательная ножка, край будет сплющенным, как на рисунке ниже.
 
-![LED Closeup](images/LEDcloseup.png)
+![светодиод крупным планом](images/LEDcloseup.png)
 
-+ Push the positive leg of the LED into row 1 of your breadboard, close to the left side of the ravine. Place the negative leg into row 1 on the other side of the ravine.
++ Вставь положительную ножку светодиода в 1 ряд макетной платы поближе к левой стороне впадины. Помести отрицательную ногу в 1 ряд на другой стороне впадины.
 
-+ Now find your resistor. A resistor is a non-polarised component, so it doesn’t matter which way around you put it into the breadboard. Push one leg into the same row that the negative LED leg is in, so it connects to the LED. Push the other resistor leg into any other free row on the right side of the ravine.
++ Теперь найди свой резистор. Резистор – это неполяризованный компонент, поэтому не имеет значения, какой стороной ты вставишь его в макетную плату. Вставь одну ногу в тот же ряд, в котором находится отрицательная ножка светодиода, чтобы она соединялась со светодиодом. Вставь другую ножку резистора в любой другой свободный ряд на правой стороне впадины.
 
-+ Now take a male-to-female jumper wire and push the male end into the same row as the LED, on the left side of the ravine near the LED's positive leg. Push the female end onto the **3V3** GPIO pin.
++ Теперь возьми соединительный провод папа-мама и вставь штырьком в один ряд со светодиодом, на левой стороне впадины возле положительной ножки светодиода. Наденьте мама-контакт на контакт GPIO **3V3**.
 
-Your circuit should look a little like this:
+Твоя схема должна выглядеть примерно так:
 
-![Circuit Missing Ground](images/ground-missing.png)
+![Схема с отсутствующей землей](images/ground-missing.png)
 
-Now, connect your components to the ground (**GND**) GPIO pin:
+Теперь подключите твои компоненты к контакту GPIO земля (**GND**):
 
-+ Make sure that your Raspberry Pi is powered on. Take another male-to-female jumper wire and push the male end into the same row as the resistor’s second leg, on the same side of the ravine. Then push the female end onto your **GND** pin. Your LED should light up!
++ Убедись, что твоя Raspberry Pi включена. Возьми другой провод папа-мама и вставь штырек в тот же ряд, в который вставлена вторая ножка резистора, на той же стороне впадины. Наденьте мама-контакт на контакт GPIO **GND**. Твой светодиод должен загореться!
 
-![Circuit Current Flow](images/circuit-current-flow.gif)
+![Течение тока в цепи](images/circuit-current-flow.gif)
 
-If your LED doesn’t light, try the following: 1) Check your Raspberry Pi is on 2) Check all your components are pushed firmly into the breadboard 3) Check your LED is the right way around 4) Make sure the legs of your components are on the right side of the ravine 5) Try another LED
+Если твой светодиод не горит, попробуй следующее: 1) Убедись, что Raspberry Pi включена 2) Убедись, что все твои компоненты плотно вставлены в макетную плату 3) Убедись, что твой светодиод установлен правильно 4) Убедитесь, что ножки твоих компонентов находятся на правой стороне впадины 5) Попробуй другой светодиод
